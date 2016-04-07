@@ -26,6 +26,6 @@ RUN apt-get install -y libssl-dev
 
 # adding start R script: you can find the RScript on the docker github
 ADD start.R start.R
-ADD Rserv.conf Rserv.conf
+ADD Rserv.conf /etc/Rserv.conf
 EXPOSE 6311
 CMD Rscript start.R
