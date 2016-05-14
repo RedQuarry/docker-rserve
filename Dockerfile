@@ -17,7 +17,7 @@ RUN gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
 RUN gpg -a --export E084DAB9 | sudo apt-key add -
 RUN apt-get update
 RUN sudo apt-get -y install r-base
-
+RUN sudo apt-get install r-cran-rcpp 
 # Important additional libraries
 RUN apt-get install -y libcurl4-gnutls-dev
 RUN apt-get install -y libxml2-dev
