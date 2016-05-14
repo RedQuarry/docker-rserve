@@ -1,7 +1,7 @@
 # It Builds an image to deploy a Rserve
 
 # Dotcloud ubuntu image
-FROM ubuntu:latest
+FROM ubuntu:14.04
 MAINTAINER Felipe Triana, ftrianakast@gmail.com
 
 # Update
